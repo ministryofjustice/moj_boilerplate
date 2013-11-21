@@ -21,14 +21,10 @@
 
 -##### Header app name #####
 - content_for :inside_header do
-  .header-proposition
-    .content
-      %nav#proposition-menu
-        %a#proposition-name{:href => "/"}
-          = Rails.configuration.app_title
-          - if Rails.configuration.phase != 'live'
-            %small{:class => Rails.configuration.phase}
-              = Rails.configuration.phase.upcase
+  .service-header
+    %a.service-name{:href => "/"}#{Rails.configuration.app_title}
+    - if Rails.configuration.phase != 'live'
+      %a{:href => "#", :class => "service-phase " + Rails.configuration.phase}#{Rails.configuration.phase.upcase}
 
 -##### Phase indicator bar #####
 - content_for :after_header do
