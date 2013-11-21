@@ -1,0 +1,33 @@
+// GOV.UK Toolkit
+@import "colours";
+@import "typography";
+@import "conditionals";
+@import "css3";
+@import "design-patterns/buttons";
+
+// MOJ Toolkit
+//@import "moj-base";
+
+// Core
+@import "core/moj-colours.scss";
+@import "core/moj-typography.scss";
+@import "core/layout.scss";
+
+// Components
+@import "cpt/phase-indicator";
+@import "cpt/service-name";
+@import "cpt/breadcrumb";
+
+// Modules
+// @import "mod/";
+
+
+
+// Use toolkit mixins
+.indicator{
+  @include phase-banner(alpha);
+}
+#proposition-name .alpha{
+  @include phase-tag(alpha);
+}
+// @include phase-tag;
