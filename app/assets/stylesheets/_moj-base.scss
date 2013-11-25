@@ -24,9 +24,6 @@
 
 
 // Use toolkit mixins
-.indicator{
-  @include phase-banner(alpha);
-}
 #proposition-name .alpha{
   @include phase-tag(alpha);
 }
