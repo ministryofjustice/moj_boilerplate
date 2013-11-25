@@ -6,3 +6,16 @@ section#content {
   _width: 960px;
   min-height: 400px;
 }
+
+// wrapper border - indicates phase
+#wrapper {
+  padding: 0 0 30px 0;
+  border-bottom: 10px solid $black;
+
+  body.alpha & {
+    border-color: $alpha-colour;
+  }
+  body.beta & {
+    border-color: $beta-colour;
+  }
+}
