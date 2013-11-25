@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "moj_kickstart/version"
+require "moj_boilerplate/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "moj_kickstart"
-  s.version     = MojKickstart::VERSION
-  s.authors     = ["MOJ DS"]
+  s.name        = "moj_boilerplate"
+  s.version     = MojBoilerplate::VERSION
+  s.authors     = ["MOJ Digital Services"]
   s.email       = ["info@digital.justice.gov.uk"]
   s.homepage    = "http://blogs.justice.gov.uk/digital/"
-  s.summary     = "MOJ DS Kickstart"
-  s.description = "MOJ DS Kickstart"
+  s.summary     = "MOJ DS Boilerplate"
+  s.description = "MOJ DS Boilerplate"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

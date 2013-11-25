@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    moj_kickstart (0.0.1)
+    moj_boilerplate (0.0.1)
       rails (~> 4.0.0)
 
 GEM
@@ -97,5 +97,5 @@ PLATFORMS
 DEPENDENCIES
   capybara
   minitest
-  moj_kickstart!
+  moj_boilerplate!
   sqlite3

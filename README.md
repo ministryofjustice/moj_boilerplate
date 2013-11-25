@@ -1,6 +1,6 @@
-# MOJ Kickstart
+# MOJ Boilerplate
 
-Basic kickstart for MOJ projects
+Basic boilerplate for MOJ projects
 
 ## Required application.rb config vars
 

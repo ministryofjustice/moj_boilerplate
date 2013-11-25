@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "moj_kickstart"
+require "moj_boilerplate"
 
 module Dummy
   class Application < Rails::Application
