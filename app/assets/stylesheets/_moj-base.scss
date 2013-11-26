@@ -9,24 +9,20 @@
 // MOJ Toolkit
 //@import "moj-base";
 
-// Core
-@import "core/moj-colours.scss";
-@import "core/moj-typography.scss";
-@import "core/layout.scss";
+// Core MOJ Styles
+@import "moj-core/moj-colours.scss";
+@import "moj-core/moj-typography.scss";
+@import "moj-core/layout.scss";
 
-// Components
-@import "cpt/phase-indicator";
-@import "cpt/service-name";
-@import "cpt/breadcrumb";
-@import "cpt/button";
-
-// Modules
-@import "mod/footer.scss";
-
+// Design Patterns
+@import "design-patterns/phase-indicator";
+@import "design-patterns/service-name";
+@import "design-patterns/breadcrumb";
+@import "design-patterns/button";
+@import "design-patterns/footer.scss";
 
 
 // Use toolkit mixins
 #proposition-name .alpha{
   @include phase-tag(alpha);
 }
-// @include phase-tag;
