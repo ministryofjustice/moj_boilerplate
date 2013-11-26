@@ -49,10 +49,6 @@
 .indicator{
   body.alpha & {
     @include phase-banner(alpha);
-
-    p, a, a:link, a:visited, a:active {
-      color: $white;
-    }
   }
   body.beta & {
     @include phase-banner(beta);
