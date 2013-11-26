@@ -1,5 +1,5 @@
 -##### Set page title #####
-- content_for :page_title, Rails.configuration.app_title
+- content_for :page_title, "#{Rails.configuration.app_title}"
 
 -##### Extra elements for <head> #####
 - content_for :head do
@@ -17,7 +17,7 @@
       ga('send', 'pageview');
 
 -##### Body class #####
-- content_for :body_classes, Rails.configuration.phase + " " + Rails.configuration.product_type
+- content_for :body_classes, "#{Rails.configuration.phase} #{Rails.configuration.product_type}"
 
 -##### Header app name #####
 - content_for :inside_header do
