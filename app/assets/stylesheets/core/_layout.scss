@@ -1,5 +1,5 @@
 
-section#content {
+#content {
   margin: auto;
   max-width: 960px;
   width: auto;
@@ -9,6 +9,7 @@ section#content {
 
 // wrapper border - indicates phase
 #wrapper {
+  background-color: $white;
   padding: 0 0 30px 0;
   border-bottom: 10px solid $black;
 

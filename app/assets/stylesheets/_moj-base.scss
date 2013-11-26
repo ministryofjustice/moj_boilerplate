@@ -3,6 +3,7 @@
 @import "typography";
 @import "conditionals";
 @import "css3";
+@import "shims";
 @import "design-patterns/buttons";
 
 // MOJ Toolkit
@@ -17,6 +18,7 @@
 @import "cpt/phase-indicator";
 @import "cpt/service-name";
 @import "cpt/breadcrumb";
+@import "cpt/button";
 
 // Modules
 @import "mod/footer.scss";

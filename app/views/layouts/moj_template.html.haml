@@ -37,6 +37,7 @@
 
 -##### Main content #####
 - content_for :content do
+  = yield :breadcrumb
   #wrapper.group
     %section#content.group{:role => "main"}
       .full-width-group

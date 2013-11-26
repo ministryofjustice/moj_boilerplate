@@ -1,19 +1,14 @@
 #global-breadcrumb {
-  // background-color: $white;
-  // max-width: 1020px;
-  // margin: 0 auto;
+  background-color: $white;
+  max-width: 1020px;
+  margin: 0 auto;
   z-index: 50;
 
   nav {
-    // border: none;
-    // margin: 0;
-
     ol {
-      border-top: 10px solid #2b8cc4;
       max-width: 960px;
       margin: 0 30px;
       padding: 0.75em 0;
-      border: 0;
 
       li {
         @include core-16;
