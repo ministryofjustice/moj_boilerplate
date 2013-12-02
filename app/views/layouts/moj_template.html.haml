@@ -40,8 +40,8 @@
   = yield :breadcrumb
   #wrapper.group
     %section#content.group{:role => "main"}
-      .full-width-group
-        = yield
+      = yield :inside_content
+      = yield
 
 -##### Footer top #####
 - content_for :footer_top do

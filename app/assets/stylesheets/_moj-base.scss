@@ -10,16 +10,16 @@
 //@import "moj-base";
 
 // Core MOJ Styles
-@import "moj-core/moj-colours.scss";
-@import "moj-core/moj-typography.scss";
-@import "moj-core/layout.scss";
+@import "moj-core/moj-colours";
+@import "moj-core/moj-typography";
+@import "moj-core/layout";
 
 // Design Patterns
 @import "design-patterns/phase-indicator";
 @import "design-patterns/service-name";
 @import "design-patterns/breadcrumb";
 @import "design-patterns/button";
-@import "design-patterns/footer.scss";
+@import "design-patterns/footer";
 
 
 // Use toolkit mixins
