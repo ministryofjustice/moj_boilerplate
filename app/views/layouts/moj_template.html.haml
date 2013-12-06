@@ -24,7 +24,7 @@
   .service-header
     %a.service-name{:href => "/"}#{Rails.configuration.app_title}
     - if Rails.configuration.phase != 'live'
-      %a{:href => "#", :class => "service-phase " + Rails.configuration.phase}#{Rails.configuration.phase.upcase}
+      %a{:href => "https://www.gov.uk/service-manual/phases/#{Rails.configuration.phase.downcase}.html", :class => "service-phase " + Rails.configuration.phase}#{Rails.configuration.phase.upcase}
 
 -##### Phase indicator bar #####
 - content_for :after_header do
