@@ -2,9 +2,14 @@
 @import "colours";
 @import "typography";
 @import "conditionals";
+@import "device-pixels";
+@import "measurements";
 @import "css3";
 @import "shims";
 @import "design-patterns/buttons";
+
+// SHAME - files waiting to be removed
+@import "shame/alpha-beta";
 
 // MOJ Toolkit
 //@import "moj-base";
@@ -14,15 +19,9 @@
 @import "moj-core/moj-typography";
 @import "moj-core/layout";
 
-// Design Patterns
+// MOJ Design Patterns
 @import "design-patterns/phase-indicator";
 @import "design-patterns/service-name";
 @import "design-patterns/breadcrumb";
 @import "design-patterns/button";
 @import "design-patterns/footer";
-
-
-// Use toolkit mixins
-#proposition-name .alpha{
-  @include phase-tag(alpha);
-}
