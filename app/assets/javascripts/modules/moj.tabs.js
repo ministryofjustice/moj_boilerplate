@@ -50,7 +50,7 @@
     _activateTab: function (activeLink) {
       var c = this.settings.activetabclass,
         e = this.settings.activetabelement;
-      
+
       this.$tabs.closest(e).removeClass(c);
       this.$tabs.filter(activeLink).closest(e).addClass(c);
     },
@@ -59,7 +59,7 @@
       var shown = this
                     .$tabPanes.removeClass(this.settings.activepaneclass)
                     .filter(hash).addClass(this.settings.activepaneclass);
-      
+
       if (this.settings.focusfirst) {
         this._focusFirstElement(shown);
       };
