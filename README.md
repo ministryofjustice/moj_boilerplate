@@ -2,13 +2,13 @@
 
 This repository is intended to provide a consistent starting point for Ministry of Justice services that are hosted on the gov.uk domain. It includes a basic shared layout and assets that are used across multiple projects.
 
-**NOTE:** This repository is currently only for use in Ruby on Rails projects and requires the [GOV.UK Template](https://github.com/alphagov/govuk_template) and [GOV.UK Frontend Toolkit](https://github.com/alphagov/govuk_frontend_toolkit_gem) gems to be included first. See [installation](#installing) section for more detailed instructions.
+**NOTE:** This repository is currently only for use in Ruby on Rails projects and requires the [GOV.UK Template](https://github.com/alphagov/govuk_template) and [GOV.UK Frontend Toolkit](https://github.com/alphagov/govuk_frontend_toolkit_gem) gems to be included first. See [installation](#installation) section for more detailed instructions.
 
 ------
 
 [View Changelog](https://github.com/ministryofjustice/moj_boilerplate/blob/master/changelog.md)
 
-## Installing
+## Installation
 
 Currently only works with Ruby on Rails.
 
@@ -70,7 +70,7 @@ To include the MOJ namespace, add this line to your `app/assets/javascripts/appl
 
     //= require moj
 
-To make use of any modules from the `modules/` folder, include the required module file **before** the `moj.js` file. Here's an example usage:
+To make use of any modules from the `modules/` folder, include the required module file **after** the `moj.js` file. Here's an example usage:
 
     //= require modules/moj.tabs.js
     //= require moj
