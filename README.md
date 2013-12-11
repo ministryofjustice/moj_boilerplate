@@ -12,6 +12,17 @@ This repository is intended to provide a consistent starting point for Ministry 
 
 Currently only works with Ruby on Rails.
 
+### Dependencies
+
+The MOJ boilerplate requires two gems to be included for it to be able to work correctly. You **must** make sure you include the following gems before the `moj_boilerplate`:
+
+    gem 'govuk_template'
+    gem 'govuk_frontend_toolkit'
+
+then, include the `moj_boilerplate` gem by pointing to this Github repository and a certain tag. For example:
+
+    gem 'moj_boilerplate', git: 'https://github.com/ministryofjustice/moj_boilerplate.git', tag: 'v0.1.0'
+
 ### Config
 
 In order for these files to work, you will need to set a number of variables in your application.rb for things like project title, current phase, etc. If you are encountering errors when trying to use the toolkit, make sure the following are set inside your class Application (example values from a current project provided):
