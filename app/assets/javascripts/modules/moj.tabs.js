@@ -1,12 +1,8 @@
-/*jslint browser: true, evil: false, plusplus: true, white: true, indent: 2, nomen: true */
-/*global moj, $ */
-
 // Tabs modules for MOJ
 // Dependencies: moj, jQuery
 
-(function(){
-
-  "use strict";
+(function () {
+  'use strict';
 
   // Define the class
   var Tabs = function (el, options) {
@@ -62,7 +58,7 @@
 
       if (this.settings.focusfirst) {
         this._focusFirstElement(shown);
-      };
+      }
     },
 
     _activateFirstLink: function () {
@@ -84,5 +80,4 @@
       });
     }
   };
-
 }());
