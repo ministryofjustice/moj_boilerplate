@@ -2,6 +2,9 @@
 
 A list of basic changes associated with each version. Versions are updated using the [Semantic Versioning](http://semver.org/) system.
 
+#### v0.3.0 (2014-01-08)
+  * Add govuk gem dependency to this gem rather than require them to be included in the app manually
+
 #### v0.2.0 (2014-01-07)
   * Update JS to latest version of [HeisenbergJS](https://github.com/Heisenbergjs/heisenberg)
   * 'moj' object must now be initiated in your javascript with '$( moj.init );'
