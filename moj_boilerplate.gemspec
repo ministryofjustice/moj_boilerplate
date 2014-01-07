@@ -11,14 +11,11 @@ Gem::Specification.new do |s|
   s.email       = ["info@digital.justice.gov.uk"]
   s.homepage    = "http://blogs.justice.gov.uk/digital/"
   s.summary     = "MOJ DS Boilerplate"
-  s.description = "MOJ DS Boilerplate"
+  s.description = "Basic boilerplate for MOJ Services"
+  s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.0"
-
-  s.add_development_dependency "sqlite3"
-  s.add_development_dependency "minitest"
-  s.add_development_dependency "capybara"
+  s.add_dependency "govuk_template", "0.3.8"
+  s.add_dependency "govuk_frontend_toolkit", "0.38.0"
 end
