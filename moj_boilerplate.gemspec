@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "govuk_template", "0.3.8"
-  s.add_dependency "govuk_frontend_toolkit", "0.38.0"
+  s.add_dependency "govuk_frontend_toolkit", "0.39.0"
 end
