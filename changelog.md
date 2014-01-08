@@ -2,7 +2,10 @@
 
 A list of basic changes associated with each version. Versions are updated using the [Semantic Versioning](http://semver.org/) system.
 
-#### v0.3.0 (2014-01-08)
+#### v0.3.1 (2014-01-08)
+  * Bump govuk_frontend_toolkit to v0.39.0
+
+#### v0.3.0 (2014-01-07)
   * Add govuk gem dependency to this gem rather than require them to be included in the app manually
 
 #### v0.2.0 (2014-01-07)
