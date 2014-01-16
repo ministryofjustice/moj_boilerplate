@@ -36,6 +36,7 @@ In order for these files to work, you will need to set a number of variables in 
     # Presumed values: information, service
     config.product_type = ''
     # Feedback URL (URL for feedback link in phase banner)
+    # Use 'auto_add_path' for it to add a path link to the new_feedback route
     config.feedback_url = ''
     # Google Analytics ID (Tracking ID for the service)
     config.ga_id = ''
