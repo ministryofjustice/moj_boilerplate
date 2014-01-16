@@ -2,6 +2,9 @@
 
 A list of basic changes associated with each version. Versions are updated using the [Semantic Versioning](http://semver.org/) system.
 
+#### v0.4.0 (2014-01-16)
+  * Add support for boilerplate to auto add path for feedback form
+
 #### v0.3.1 (2014-01-08)
   * Bump govuk_frontend_toolkit to v0.39.0
 

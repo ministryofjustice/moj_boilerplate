@@ -32,7 +32,10 @@
     %p
       %strong #{Rails.configuration.phase.capitalize}:
       This is a new service -
-      %a{:href => Rails.configuration.feedback_url}your feedback
+      - if Rails.configuration.feedback_url == 'auto_add_path'
+        %a{:href => new_feedback_path(referrer: request.original_url)}your feedback
+      - else
+        %a{:href => Rails.configuration.feedback_url}your feedback
       will help us to improve it
 
 -##### Main content #####
