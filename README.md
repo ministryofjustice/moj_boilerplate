@@ -8,9 +8,11 @@ This repository is intended to provide a consistent starting point for Ministry 
 
 [View Changelog](https://github.com/ministryofjustice/moj_boilerplate/blob/master/changelog.md)
 
-## Installation
+## Installation (Ruby Gem)
 
 Currently only works with Ruby on Rails.
+
+**Note: After making changes to sass files within the boilerplate run `rake tmp:clear` in your rails app to clear any existing cached files.**
 
 ### Dependencies
 
