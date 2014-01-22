@@ -2,6 +2,9 @@
 
 A list of basic changes associated with each version. Versions are updated using the [Semantic Versioning](http://semver.org/) system.
 
+#### v0.5.0 (2014-01-22)
+  * Add a separate variable for the proposition title so an app can use different content in <title> and header
+
 #### v0.4.0 (2014-01-16)
   * Add support for boilerplate to auto add path for feedback form
 
