@@ -2,6 +2,9 @@
 
 A list of basic changes associated with each version. Versions are updated using the [Semantic Versioning](http://semver.org/) system.
 
+#### v0.6.1 (2014-01-22)
+  * Increase `#wrapper` padding
+
 #### v0.6.0 (2014-01-22)
   * Add some basic typography styles for headings
 
