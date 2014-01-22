@@ -27,8 +27,10 @@ then, include the `moj_boilerplate` gem by pointing to this Github repository an
 
 In order for these files to work, you will need to set a number of variables in your application.rb for things like project title, current phase, etc. If you are encountering errors when trying to use the toolkit, make sure the following are set inside your class Application (example values from a current project provided):
 
-    # Application Title (Populates <title> and header)
+    # Application Title (Populates <title>)
     config.app_title = ''
+    # Proposition Title (Populates proposition header)
+    config.proposition_title = ''
     # Current Phase (Sets the current phase and the colour of phase tags)
     # Presumed values: alpha, beta, live
     config.phase = ''
