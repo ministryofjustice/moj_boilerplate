@@ -77,7 +77,7 @@ To include the MOJ namespace, add this line to your `app/assets/javascripts/appl
 
 To make use of any modules from the `modules/` folder, include the required module file **after** the `moj.js` file. Here's an example usage:
 
-    //= require modules/moj.tabs.js
     //= require moj
+    //= require modules/moj.tabs.js
 
 For **documentation on Modules**, see the [wiki pages](https://github.com/ministryofjustice/moj_boilerplate/wiki).
