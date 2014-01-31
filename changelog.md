@@ -2,6 +2,12 @@
 
 A list of basic changes associated with each version. Versions are updated using the [Semantic Versioning](http://semver.org/) system.
 
+#### v0.7.0 (2014-01-31)
+  * Remove underscore from moj-base.scss so it can be compiled into an actual .css file with sass
+
+#### v0.6.3 (2014-01-25)
+  * Add recuitment message to console log
+
 #### v0.6.2 (2014-01-22)
   * Add cache clearing to readme
 
