@@ -1,0 +1,14 @@
+<div class="indicator cf">
+      <p>
+        <strong><%= config_item(:phase) %>:</strong>
+        This is a new service -
+        <% if config_item(:feedback_url) == :auto_add_path %>
+        <a href="<%= new_feedback_path(referrer: request.original_url) %>">your feedback</a>
+        <% else %>
+        <a href="<%= "#{config_item(:feedback_url)}" %>">your feedback</a>
+        <% end %>
+        will help us to improve it
+      </p>
+    </div>
+
+    <%= yield :after_header %>

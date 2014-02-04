@@ -1,0 +1,8 @@
+<!--[if gt IE 6]><!-->
+    <% unless defined?(noapp) && noapp %>
+      <%= javascript_include_tag "application" %>
+    <% end %>
+    <%= yield :javascript %>
+    <!--<![endif]-->
+
+    <%= yield :body_end %>
