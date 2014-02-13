@@ -4,25 +4,27 @@ require_relative 'template_processor'
 module Compiler
   class MustacheProcessor < TemplateProcessor
 
-    # @@yield_hash = {
-    #   after_header: "{{{ afterHeader }}}",
-    #   body_classes: "{{ bodyClasses }}",
-    #   body_end: "{{{ bodyEnd }}}",
-    #   breadcrumb: "{{{ breadcrumb }}}",
-    #   content: "{{{ content }}}",
-    #   cookie_message: "{{{ cookieMessage }}}",
-    #   footer_support_links: "{{{ footerSupportLinks }}}",
-    #   footer_top: "{{{ footerTop }}}",
-    #   head: "{{{ head }}}",
-    #   header_class: "{{{ headerClass }}}",
-    #   inside_header: "{{{ insideHeader }}}",
-    #   page_title: "{{ pageTitle }}",
-    #   proposition_header: "{{{ propositionHeader }}}",
-    #   top_of_page: "{{{ topOfPage }}}"
-    # }
+    @@yield_hash = {
+      after_header: "{{{ afterHeader }}}",
+      body_classes: "{{{ bodyClasses }}}",
+      body_end: "{{{ bodyEnd }}}",
+      before_content: "{{{ beforeContent }}}",
+      content: "{{{ content }}}",
+      cookie_message: "{{{ cookieMessage }}}",
+      footer_support_links: "{{{ footerSupportLinks }}}",
+      footer_top: "{{{ footerTop }}}",
+      head: "{{{ head }}}",
+      header_class: "{{{ headerClass }}}",
+      inside_header: "{{{ insideHeader }}}",
+      page_title: "{{ pageTitle }}",
+      proposition_header: "{{{ propositionHeader }}}",
+      top_of_page: "{{{ topOfPage }}}",
+      stylesheets: "{{{ stylesheets }}}",
+      javascripts: "{{{ javascripts }}}"
+    }
 
     def handle_yield(section)
-      "{{{ #{section.to_s.split(/[\W_]/).map {|c| c.capitalize}.join.gsub!(/\b\w/) { $&.downcase }} }}}"
+      @@yield_hash[section]
     end
 
     def asset_path(file, options={})
@@ -39,7 +41,7 @@ module Compiler
     end
 
     def config_item(key)
-      "{{ #{key.to_s.downcase} }}"
+      "{{{ #{key.to_s.downcase} }}}"
     end
 
     def content_for?(*args)

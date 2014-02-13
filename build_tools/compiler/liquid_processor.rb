@@ -8,6 +8,7 @@ module Compiler
       after_header: "{% include layouts/_after_header.html %}",
       body_classes: "{% include layouts/_body_classes.html %}",
       body_end: "{% include layouts/_body.html %}",
+      before_content: "{{ beforeContent }}",
       content: "{{ content }}",
       cookie_message: "{% include layouts/_cookie_message.html %}",
       footer_support_links: "{% include layouts/_footer_support_links.html %}",
@@ -16,7 +17,10 @@ module Compiler
       header_class: "{% if page.header_class %}{{ page.header_class }}{% endif %}",
       inside_header: "{% include layouts/_inside_header.html %}",
       page_title: "{% include layouts/_page_title.html %}",
-      proposition_header: "{% include layouts/_proposition_header.html %}"
+      proposition_header: "{% include layouts/_proposition_header.html %}",
+      top_of_page: "{% include layouts/_top_of_page.html %}",
+      stylesheets: "{% include layouts/_stylesheets.html %}",
+      javascripts: "{% include layouts/_javascripts.html %}"
     }
 
     def handle_yield(section = :layout)
@@ -33,6 +37,10 @@ module Compiler
       else
         "{{ site.govuk_template_assets }}/images/#{file}"
       end
+    end
+
+    def config_item(key)
+      "{{ #{key.to_s.downcase} }}"
     end
 
     def content_for?(*args)

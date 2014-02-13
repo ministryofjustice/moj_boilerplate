@@ -46,7 +46,10 @@ module Compiler
     end
 
     def config_item(key)
-      false
+    end
+
+    def environment
+      "production"
     end
 
     def method_missing(name, *args)

@@ -16,42 +16,42 @@ task :build => ["build:gem", "build:tar", "build:play", "build:mustache", "build
 namespace :build do
   desc "Build moj_template-#{MojBoilerplate::VERSION}.gem into the pkg directory"
   task :gem => :compile do
-    puts "Building pkg/moj_template-#{MojBoilerplate::VERSION}.gem"
+    puts "Building ./pkg/moj_template-#{MojBoilerplate::VERSION}.gem"
     require 'packager/gem_packager'
     Packager::GemPackager.build
   end
 
   desc "Build moj_template-#{MojBoilerplate::VERSION}.tgz into the pkg directory"
   task :tar => :compile do
-    puts "Building pkg/moj_template-#{MojBoilerplate::VERSION}.tgz"
+    puts "Building ./pkg/moj_template-#{MojBoilerplate::VERSION}.tgz"
     require 'packager/tar_packager'
     Packager::TarPackager.build
   end
 
   desc "Build play_moj_template-#{MojBoilerplate::VERSION}.tgz into the pkg directory"
   task :play => :compile do
-    puts "Building pkg/play_moj_template-#{MojBoilerplate::VERSION}.tgz"
+    puts "Building ./pkg/play_moj_template-#{MojBoilerplate::VERSION}.tgz"
     require 'packager/play_packager'
     Packager::PlayPackager.build
   end
 
   desc "Build mustache_moj_template-#{MojBoilerplate::VERSION} into the pkg directory"
   task :mustache => :compile do
-    puts "Building pkg/mustache_moj_template-#{MojBoilerplate::VERSION}"
+    puts "Building ./pkg/mustache_moj_template-#{MojBoilerplate::VERSION}"
     require 'packager/mustache_packager'
     Packager::MustachePackager.build
   end
 
   desc "Build mustache_inheritance_moj_template-#{MojBoilerplate::VERSION} into the pkg directory"
   task :mustache_inheritance => :compile do
-    puts "Building pkg/mustache_inheritance_moj_template-#{MojBoilerplate::VERSION}"
+    puts "Building ./pkg/mustache_inheritance_moj_template-#{MojBoilerplate::VERSION}"
     require 'packager/mustache_inheritance_packager'
     Packager::MustacheInheritancePackager.build
   end
 
   desc "Build liquid_moj_template-#{MojBoilerplate::VERSION} into the pkg directory"
   task :liquid => :compile do
-    puts "Building pkg/liquid_moj_template-#{MojBoilerplate::VERSION}"
+    puts "Building ./pkg/liquid_moj_template-#{MojBoilerplate::VERSION}"
     require 'packager/liquid_packager'
     Packager::LiquidPackager.build
   end
