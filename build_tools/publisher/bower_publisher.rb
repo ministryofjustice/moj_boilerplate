@@ -4,7 +4,7 @@ require 'open3'
 
 module Publisher
   class MustachePublisher
-    GIT_URL = "git@github.com:ministryofjustice/moj_template_mustache"
+    GIT_URL = "git@github.com:ministryofjustice/moj_template_bower"
 
     def initialize(version = MojBoilerplate::VERSION)
       @version = version
@@ -13,7 +13,7 @@ module Publisher
     end
 
     def publish
-      Dir.mktmpdir("moj_template_mustache") do |dir|
+      Dir.mktmpdir("moj_template_bower") do |dir|
         run "git clone -q #{GIT_URL.shellescape} #{dir.shellescape}"
         Dir.chdir(dir) do
           run "ls -1 | grep -v 'README.md' | xargs -I {} rm -rf {}"
