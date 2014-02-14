@@ -19,3 +19,4 @@ javascripts:
 # MOJ Template assets
 - vendor/jquery/jquery-1.11.0.min.js
 - moj
+- modules/moj.tabs.js

@@ -8,5 +8,4 @@ test/dummy/tmp/
 test/dummy/.sass-cache
 
 # hide build files
-/app/
 /pkg/
